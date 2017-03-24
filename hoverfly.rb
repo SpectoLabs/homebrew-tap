@@ -6,7 +6,6 @@ class Hoverfly < Formula
   sha256 "2eef2a81bd00e03915806ee69837c8c8ee30394224459ce60fc328692363f43f"
 
   depends_on "go" => :build
-  depends_on "glide" => :build
 
   def install
     contents = Dir["{*,.git,.gitignore}"]
