@@ -3,7 +3,7 @@ class Hoverfly < Formula
   homepage "http://hoverfly.io"
   url "https://github.com/SpectoLabs/hoverfly/archive/v0.11.2.tar.gz"
   version "0.11.1"
-  sha256 "671f70b2e5631da616eac1a10129602346c5a183b85389e8cd92130c4725d02e"
+  sha256 "2686c914b0a5abcd053e9b7dad96cef673f3f036c255b0074bdf320c7f936228"
 
   depends_on "go" => :build
 
