@@ -14,9 +14,8 @@ class Hoverfly < Formula
     ENV["GOPATH"] = gopath
     ENV.prepend_create_path "PATH", gopath/"bin"
     cd gopath/"src/github.com/SpectoLabs/hoverfly" do
-	system "make", "hoverfly-build"
+	system "make", "build", "GIT_TAG_NAME=v0.11.4"
 	bin.install "target/hoverfly"
-	system "make", "hoverctl-build", "GIT_TAG_NAME=v0.11.4"
 	bin.install "target/hoverctl"
     end
   end
