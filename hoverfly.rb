@@ -1,9 +1,9 @@
 class Hoverfly < Formula
   desc "lightweight & fantastic service virtualization/API simulation tool, aims to be developer/tester friendly"
   homepage "http://hoverfly.io"
-  url "https://github.com/SpectoLabs/hoverfly/archive/v1.0.0-rc.1.tar.gz"
-  version "1.0.0-rc.1"
-  sha256 "feb5306f46ad246fb212a6dfe1c4fca01246c649a53a68ddb9fed724f01a4376"
+  url "https://github.com/SpectoLabs/hoverfly/archive/v1.0.0-rc.2.tar.gz"
+  version "1.0.0-rc.2"
+  sha256 "dc5afc566e8da39b14386938122192f450f00508b9b28524a1648d51908fc4d4"
 
   depends_on "go" => :build
 
@@ -14,7 +14,7 @@ class Hoverfly < Formula
     ENV["GOPATH"] = gopath
     ENV.prepend_create_path "PATH", gopath/"bin"
     cd gopath/"src/github.com/SpectoLabs/hoverfly" do
-	system "make", "build", "GIT_TAG_NAME=v1.0.0-rc.1"
+	system "make", "build", "GIT_TAG_NAME=v1.0.0-rc.2"
 	bin.install "target/hoverfly"
 	bin.install "target/hoverctl"
     end
