@@ -1,8 +1,8 @@
 class Hoverfly < Formula
   desc "lightweight & fantastic service virtualization/API simulation tool, aims to be developer/tester friendly"
   homepage "http://hoverfly.io"
-  url "https://github.com/SpectoLabs/hoverfly/archive/v1.10.8.tar.gz"
-  sha256 "9674aee1ae2b32552c44c2a8fb520b838f5340ff7d90bf94f5a7ddf5df6d44d4"
+  url "https://github.com/SpectoLabs/hoverfly/archive/v1.10.9.tar.gz"
+  sha256 "e03bb5d2182ad2f724d7d2426ae0edcbac5e3ce5fc14d054c2dee0ec41007957"
 
   depends_on "go" => :build
 
